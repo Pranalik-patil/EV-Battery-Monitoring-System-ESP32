@@ -24,7 +24,7 @@ This project presents a **cloud-connected Battery Management System (BMS)** that
 
 ## 🚀 Key Features
 
-✅ Real-time monitoring of battery parameters
+✅ Real-time monitoring of battery parameter
 ✅ SOC (State of Charge) estimation
 ✅ Wireless communication using ESP32 (ESP-NOW)
 ✅ Cloud integration with live dashboard
@@ -155,12 +155,28 @@ EV-Battery-Monitoring-System/
 
 ---
 
+📡 System Architecture
+
+The system consists of two main units: a Sensor Node (Transmitter) and a Receiver Node (Cloud Interface).
+
+🔄 Data Flow
+Battery + Sensors
+   ↓
+ESP32 (Sensor Node / Transmitter)
+   ↓  (ESP-NOW Wireless Communication)
+ESP32 (Receiver Node / RSU)
+   ↓  (Wi-Fi + MQTT)
+Adafruit IO Cloud
+   ↓
+Dashboard / User Interface
+
 ## 📊 Results
 
 * Accurate real-time monitoring achieved
 * Reliable ESP-NOW communication
 * Successful cloud visualization
 * Fault detection working efficiently
+* Achieved accurate real-time monitoring with reliable wireless communication and cloud visualization.
 
 ---
 
@@ -180,15 +196,6 @@ EV-Battery-Monitoring-System/
 * Mobile app integration
 * Advanced battery analytics
 * Support for larger EV battery packs
-
----
-
-## 👩‍💻 Contributors
-
-* Pranali Patil
-* Rutuja Halgekar
-* Shrinidhi Pattar
-* Sneha Murgod
 
 ---
 
